@@ -1,0 +1,1770 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #000;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    background: #000;
+    height: 91px;
+    color: white;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.header ul li {
+    cursor: pointer;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    position: relative;
+    padding: 16px 24px;
+}
+
+.header ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 1px;
+    background: #02D1FF;
+    transition: .2s linear;
+}
+
+.header ul li:hover::after {
+    width: 100%;
+}
+
+.header ul li.activated {
+    color: #02D1FF;
+    font-weight: 500;
+}
+
+.header button {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    display: inline-flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: #02D1FF;
+    cursor: pointer;
+    transition: .4s linear;
+    border: 2px solid #02D1FF;
+    height: 43px;
+}
+
+.header button:hover {
+    border: 2px solid #02D1FF;
+    color: #02D1FF;
+    background-color: transparent;
+}
+
+/*  */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    padding-right: 0;
+    align-items: center;
+    height: 673px;
+}
+
+.hero .left,
+.hero .right {
+    height: 100%;
+}
+
+.hero .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.hero .right img {
+    height: 100%;
+}
+
+.hero .left h2 {
+    color: #FFF;
+    width: 635px;
+    font-family: "Crimson Text";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    display: inline;
+}
+
+.hero .left .desc {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    width: 669px;
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
+.hero .left h2 .hl {
+    color: #02D1FF;
+    font-family: "Crimson Text";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    display: inline;
+}
+
+.hero .left .button-group button {
+    display: inline-flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    color: #000;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    border: none;
+    outline: none;
+    height: 43px;
+    cursor: pointer;
+    transition: .4s linear;
+}
+
+.hero .left .button-group button:first-child {
+    background: #02D1FF;
+    border: 2px solid #02D1FF;
+    margin-right: 16px;
+}
+
+.hero .left .button-group button:first-child:hover {
+    border: 2px solid #02D1FF;
+    color: #02D1FF;
+    background-color: transparent;
+}
+
+.hero .left .button-group button:last-child {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    transition: .4s linear;
+}
+
+.hero .left .button-group button:last-child:hover {
+    border: 2px solid #fff;
+    color: #000;
+    background-color: #fff;
+}
+
+.hero .left .button-group {
+    margin-bottom: 64px;
+}
+
+.hero .left ul {
+    display: flex;
+}
+
+.hero .left ul div {
+    margin-right: 64px;
+}
+
+.hero .left div h3 {
+    color: #FFF;
+    font-family: "Crimson Text";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.hero .left div p {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+/*  */
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    padding: 0 70px;
+    padding-bottom: 104px;
+}
+
+.blogs h2 {
+    font-family: "Crimson Text";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    margin-top: 104px;
+    margin-bottom: 64px;
+}
+
+.blogs .cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.blogs .cards .card {
+    margin: 0 15px;
+    background: rgba(2, 209, 255, 0.02);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.10);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.10);
+    border-left: 0.5px solid rgba(255, 255, 255, 0.10);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    max-width: 413px;
+    margin-bottom: 64px;
+}
+
+.blogs .cards .details-preview {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.blogs .cards .card-details {
+    padding: 24px 16px;
+}
+
+.blogs .cards .card-details p {
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.blogs .cards .details-preview span {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(6px);
+    height: 69px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    padding-left: 16px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    bottom: 0;
+}
+
+.blogs .cards .button-group {
+    margin-top: 32px;
+}
+
+.blogs .cards .button-group button {
+    display: inline-flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    color: #000;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    border: none;
+    outline: none;
+    height: 43px;
+    cursor: pointer;
+    transition: .4s linear;
+}
+
+.blogs .cards .button-group button:first-child {
+    background: #02D1FF;
+    border: 2px solid #02D1FF;
+    margin-right: 16px;
+}
+
+.blogs .cards .button-group button:first-child:hover {
+    border: 2px solid #02D1FF;
+    color: #02D1FF;
+    background-color: transparent;
+}
+
+.blogs .cards .button-group button:last-child {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    transition: .4s linear;
+}
+
+.blogs .cards .button-group button:last-child:hover {
+    border: 2px solid #fff;
+    color: #000;
+    background-color: #fff;
+}
+
+/*  */
+
+.process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0 70px;
+}
+
+.process>h2 {
+    color: #FFF;
+    font-family: "Crimson Text";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    /* 64px */
+}
+
+.process>p {
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 32px;
+    width: 749px;
+}
+
+.process .line {
+    height: 1px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.70);
+    margin: 64px 0;
+}
+
+.process .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.process .card .left {
+    display: flex;
+}
+
+.process .card .left .no {
+    color: #FFF;
+    font-family: "Crimson Text";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    margin-right: 48px;
+}
+
+.process .card .left .details h2 {
+    color: #FFF;
+    font-family: "Crimson Text";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.process .card .left .details p {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    width: 536px;
+}
+
+.process .card .left .details button {
+    display: inline-flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: #02D1FF;
+    color: #000;
+    font-family: "Roboto";
+    border: none;
+    outline: none;
+    border: 2px solid #02D1FF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    height: 43px;
+    transition: .4s linear;
+    cursor: pointer;
+}
+
+.process .card .left .details button:hover {
+    color: #02D1FF;
+    border: 2px solid #02D1FF;
+    background: transparent;
+}
+
+.process .card.righty {
+    flex-direction: row-reverse;
+}
+
+/*  */
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 104px 70px;
+    color: white;
+}
+
+.about .right h2 {
+    color: #FFF;
+    font-family: "Crimson Text";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.about .right p {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    width: 726px;
+    margin-top: 32px;
+    margin-bottom: 80px;
+}
+
+.about .right .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about .right .details span {
+    display: flex;
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.about .right .details span .whited {
+    color: white;
+}
+
+/*  */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    padding: 104px 70px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.services h2 {
+    color: #FFF;
+    font-family: "Crimson Text";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 32px;
+}
+
+.services>p {
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    width: 749px;
+}
+
+.services .system {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.services .system .right .group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+.services .line {
+    height: 1px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.70);
+    margin: 64px 0;
+}
+
+.services .system .right .group .card {
+    width: 384px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services .system .right .group .card h3 {
+    color: #FFF;
+    font-family: "Crimson Text";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 24px 0;
+}
+
+.services .system .right .group .card p {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.services .system .right .group .card img {
+    width: 54px;
+    height: 54px;
+}
+
+/*  */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 104px 70px;
+    color: white;
+}
+
+.testimonials h2 {
+    color: #FFF;
+    font-family: "Crimson Text";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 64px;
+}
+
+.testimonials .system {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.testimonials .system .card {
+    display: flex;
+    background: rgba(2, 209, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 16px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding: 32px;
+}
+
+.testimonials .system .card p {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    width: 679px;
+}
+
+.testimonials .system .card .right img {
+    position: relative;
+    right: 50px;
+}
+
+.testimonials .system .card .left span {
+    display: flex;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    margin-top: 12px;
+}
+
+.testimonials .system .card .left span div {
+    color: white;
+}
+
+/*  */
+
+.join {
+    padding: 0 150px;
+    height: 201px;
+}
+
+.join .custom {
+    width: 100%;
+    background: url('./images/Rectangle\ 4773.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 40px;
+}
+
+.join h2 {
+    color: #FFF;
+    font-family: "Crimson Text";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    width: 492px;
+}
+
+.join .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.join .email h3 {
+    color: #FFF;
+    font-family: "Crimson Text";
+    margin-bottom: 24px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.join .email .input {
+    width: 443px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.join .email .input input {
+    display: flex;
+    width: 100%;
+    height: 59px;
+    padding: 24px 32px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 0.5px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    outline: none;
+}
+
+.join .email .input button {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    display: inline-flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: #02D1FF;
+    margin-right: 6px;
+    border: 2px solid #02D1FF;
+    z-index: 99;
+    cursor: pointer;
+    transition: .4s linear;
+}
+
+.join .email .input button:hover {
+    color: #02D1FF;
+    background-color: transparent;
+    border: 2px solid #02D1FF;
+}
+
+/*  */
+
+.footer {
+    display: flex;
+    background: rgba(2, 209, 255, 0.02);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 58px;
+    padding-bottom: 40px;
+    margin-top: 104px;
+    position: relative;
+}
+
+.footer .top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer .top svg {
+    margin-bottom: 16px;
+}
+
+.footer .top>ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.footer .top ul {
+    list-style: none;
+    color: white;
+    margin: 0 45px;
+}
+
+.footer .top ul .heading {
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 24px;
+}
+
+.footer .top ul li:not(.heading) {
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    cursor: pointer;
+}
+
+.footer .top .footer-details {
+    width: 278px;
+}
+
+.footer .top .footer-details {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.footer .line {
+    background: rgba(255, 255, 255, 0.70);
+    height: 1px;
+    width: 100%;
+    margin-top: 64px;
+}
+
+.footer .bottom p {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.footer .bottom div img {
+    margin: 0 12px;
+}
+
+.header .menu {
+    display: none;
+}
+
+/* ? */
+
+@media screen and (max-width: 800px) {
+    .header {
+        padding: 0 40px;
+        height: 65px;
+    }
+
+    .header img {
+        height: 24px;
+    }
+
+    .header ul li {
+        font-size: 12px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        padding: 16px 16px;
+    }
+
+    .header button {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 0 40px;
+        height: 384px;
+        padding-right: 0;
+    }
+
+    .hero .left {
+        padding-top: 32px;
+        padding-bottom: 24px;
+    }
+
+    .hero .left h2 {
+        color: #FFF;
+        width: 351px;
+        font-family: "Crimson Text";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .hero .left h2 .hl {
+        color: #02D1FF;
+        font-family: "Crimson Text";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .hero .left .desc {
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Roboto;
+        font-size: 12px;
+        margin-top: 24px;
+        margin-bottom: 16px;
+        width: 351px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .hero .left .button-group {
+        margin-bottom: 48px;
+    }
+
+    .hero .left .button-group button {
+        font-size: 12px;
+        border-width: 1px !important;
+    }
+
+    .hero .left ul div {
+        margin-right: 32px;
+    }
+
+    .hero .left div h3 {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .hero .left div p {
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .hero .left .button-group button:first-child {
+        margin-right: 13px;
+    }
+
+    .blogs {
+        padding: 60px 35px;
+    }
+
+    .blogs h2 {
+        margin-top: 60px;
+        margin-bottom: 45px;
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .blogs .cards .card {
+        border-radius: 16px;
+        width: 332px;
+        margin: 0 7px;
+    }
+
+    .blogs .cards .card:nth-child(1),
+    .blogs .cards .card:nth-child(2) {
+        margin-bottom: 40px
+    }
+
+    .blogs .cards .card:nth-child(3),
+    .blogs .cards .card:nth-child(4) {
+        margin-bottom: 40px
+    }
+
+    .blogs .cards .card button {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 100%;
+        border-width: 1px !important;
+    }
+
+    .blogs .cards .button-group {
+        margin-top: 24px;
+    }
+
+    .process {
+        padding: 0 40px;
+        padding-top: 60px;
+    }
+
+    .process h2 {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .process>p {
+        color: rgba(255, 255, 255, 0.70);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        width: 494px;
+    }
+
+    .process>.line {
+        margin: 40px 0;
+    }
+
+    .process .card .left .no {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        margin-right: 16px;
+        line-height: 100%;
+    }
+
+    .process .card .left .details h2 {
+        color: #FFF;
+        width: 272px;
+        font-family: "Crimson Text";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .process .card .left .details p {
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        width: 272px;
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+
+    .process .card .right img {
+        width: 332px;
+        height: 243px;
+        object-fit: cover;
+    }
+
+    .process .card .left .details button {
+        color: #000;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    .about {
+        padding: 60px 40px;
+    }
+
+    .about .left img {
+        width: 332px;
+        height: 382px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .about .right h2 {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .about .right p {
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Roboto;
+        width: 332px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        margin-top: 30px;
+        margin-bottom: 32px;
+        line-height: 140%;
+    }
+
+    .about .right img {
+        width: 72px;
+        height: 72px;
+    }
+
+    .about .right .details span {
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .services {
+        padding: 60px 40px;
+    }
+
+    .services h2 {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .services p {
+        color: rgba(255, 255, 255, 0.70);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        width: 487px;
+        line-height: 140%;
+    }
+
+    .services .line {
+        margin: 40px 0;
+    }
+
+    .services .left {
+        margin-right: 24px;
+    }
+
+    .services .system .left img {
+        width: 332px;
+        height: 377px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .services .system .right .group {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .services .system .right .group .card img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .services .system .right .group .card h3 {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        margin-top: 16px;
+        margin-bottom: 22px;
+    }
+
+    .services .system .right .group .card p {
+        text-align: left;
+        color: rgba(255, 255, 255, 0.70);
+        width: 332px;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .services .system .right .group {
+        margin-bottom: 0;
+    }
+
+    .testimonials {
+        padding: 60px 40px;
+    }
+
+    .testimonials h2 {
+        color: #FFF;
+        font-family: "Crimson Text";
+        margin-bottom: 45px;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .testimonials .system .left img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonials .system .card .left span {
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .testimonials .system .right p {
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Roboto;
+        width: 422px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .join {
+        padding: 0 40px;
+    }
+
+    .join .custom .email {
+        align-items: flex-end;
+    }
+
+    .join .custom .email input {
+        display: flex;
+        width: 308px;
+        padding: 24px;
+        align-items: center;
+    }
+
+    .join .custom .email .input {
+        width: fit-content;
+    }
+
+    .join .email h3 {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    .join .custom .email button {
+        color: #000;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    .join h2 {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        width: 308px;
+    }
+
+    .footer {
+        margin-top: 60px;
+        padding: 0 40px;
+    }
+
+    .footer .top>ul {
+        flex-wrap: wrap;
+        width: 418px;
+        margin: 0;
+    }
+
+    .footer .top>ul ul:last-child {
+        margin: 0;
+        margin-top: 32px !important;
+        margin-right: 65px !important;
+    }
+
+    .footer .top>ul ul:nth-child(3) {
+        margin-top: 32px;
+    }
+
+    .footer .top .footer-details {
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Roboto;
+        width: 243px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .footer .bottom {
+        padding-top: 12px;
+        padding-bottom: 24px;
+        margin-top: 0;
+    }
+
+    .footer .bottom p {
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .header {
+        height: 50px;
+        padding: 0 16px;
+    }
+
+    .header ul {
+        display: none;
+    }
+
+    .header button {
+        display: none;
+    }
+
+    .header .menu {
+        display: block;
+        height: 24px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        padding-left: 16px;
+        align-items: flex-start;
+    }
+
+    .hero .right {
+        display: flex;
+        justify-content: flex-end;
+        height: 323px;
+        width: 100%;
+    }
+
+    .hero .left h2 {
+        font-family: "Crimson Text";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        width: 288px;
+    }
+
+    .hero .left h2 .hl {
+        font-family: "Crimson Text";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .hero .left .desc {
+        width: 288px;
+    }
+
+    .hero .left ul {
+        flex-wrap: wrap;
+    }
+
+    .hero .left ul div {
+        margin-right: 47px;
+    }
+
+    .hero .left ul div:last-child {
+        margin-top: 24px;
+    }
+
+    .hero .left ul div h3 {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .hero .left ul div p {
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .blogs {
+        padding: 0 16px;
+    }
+
+    .blogs .cards {
+        width: 100%;
+
+    }
+
+    .blogs .cards .card {
+        width: 100%;
+    }
+
+    .blogs .cards .card .card-details p {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    .blogs .cards .card .details-preview span {
+        color: #FFF;
+        font-family: Roboto;
+        height: 33px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .blogs .cards .card {
+        margin-bottom: 24px !important;
+    }
+
+    .process {
+        padding: 0 16px;
+    }
+
+    .process h2 {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .process .card .right {
+        margin-bottom: 16px;
+    }
+
+    .process .card .right,
+    .process .card .right img {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    .process .card .left .no {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        margin-right: 6px;
+    }
+
+    .process .card .left .details h2 {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .process .card .left .details p {
+        margin-top: 16px;
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 24px;
+    }
+
+    .process>p {
+        color: rgba(255, 255, 255, 0.70);
+        text-align: center;
+        font-family: Roboto;
+        margin-top: 24px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        width: 288px;
+    }
+
+    .process .card,
+    .process .card.righty {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about {
+        padding: 0 16px;
+        flex-direction: column;
+    }
+
+    .about .left,
+    .about .left img {
+        width: 100%;
+    }
+
+    .about .right h2 {
+        color: #FFF;
+        margin-bottom: 16px;
+        margin-top: 16px;
+        font-family: "Crimson Text";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .about .right p {
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Roboto;
+        width: 288px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0;
+        line-height: 140%;
+    }
+
+    .about .right img {
+        width: 40px;
+        height: 40px !important;
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+
+    .about .right .details span {
+        margin-top: 0px;
+    }
+
+    .services {
+        padding: 0 16px;
+        margin-top: 80px;
+    }
+
+    .services h2 {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        margin-bottom: 24px;
+    }
+
+    .services>p {
+        color: rgba(255, 255, 255, 0.70);
+        text-align: center;
+        font-family: Roboto;
+        width: 288px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .services .line {
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+
+    .services .system {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services .system .left,
+    .services .system .left img {
+        width: 100%;
+    }
+
+    .services .system .right .group .card h3 {
+        color: #FFF;
+        margin-top: 12px;
+        margin-bottom: 16px;
+        font-family: "Crimson Text";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .services .system .right .group .card p {
+        width: 288px;
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .services .system .right .group .card {
+        margin-bottom: 32px;
+    }
+
+    .testimonials {
+        padding: 0 16px;
+    }
+
+    .testimonials .system .card .left img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimonials .system .card .right {
+        margin-top: 43px;
+    }
+
+    .testimonials .system .card {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .testimonials .system .card p {
+        width: 223px;
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        margin-left: 33px;
+    }
+
+    .testimonials .system .card .right img {
+        width: 33px;
+        height: 33px;
+        right: 0;
+    }
+
+    .join {
+        padding: 0 16px;
+    }
+
+    .join .custom {
+        flex-direction: column;
+        padding: 24px 16px;
+    }
+
+    .join .custom .email {
+        align-items: flex-start;
+        margin-top: 48px;
+        margin-bottom: 16px;
+    }
+
+    .join .custom .email input {
+        width: 100%;
+        height: 37px;
+    }
+
+    .join .custom .email button {
+        height: 29px;
+    }
+
+    .join .custom .email .input {
+        width: 100%;
+    }
+
+    .join .custom .email h3 {
+        color: #FFF;
+        font-family: "Crimson Text";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    .join .custom h2 {
+        color: #FFF;
+        width: 247px;
+        font-family: "Crimson Text";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .footer {
+        padding: 0 16px;
+    }
+
+    .footer .top>ul {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .footer ul ul {
+        margin: 0 !important;
+        width: 125px;
+    }
+
+    .footer .top>ul ul:last-child {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .footer .top {
+        flex-direction: column;
+    }
+
+    .footer .top>ul ul:last-child {
+        margin-top: 32px !important;
+    }
+
+    .footer ul ul:nth-child(3) {
+        margin-top: 32px !important;
+    }
+
+    .footer .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .footer .bottom p:nth-child(2) {
+        margin: 16px 0;
+    }
+}
